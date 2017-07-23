@@ -1,0 +1,12 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: language-aggregator-api
+spec:
+  rules:
+  - host: rpalcolea.gr8conf.us
+    http:
+        paths:
+        - backend:
+            serviceName: language-aggregator-api
+            servicePort: 80
